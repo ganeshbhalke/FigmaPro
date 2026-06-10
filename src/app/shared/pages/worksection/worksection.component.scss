@@ -1,0 +1,123 @@
+.work-section{
+  padding:20px 8%;
+  position:relative;
+  overflow:hidden;
+  background-color:#f7f8fa ;
+
+}
+
+// .gana{
+//   background-color:#f7f8fa ;
+// }
+.work-section h2{
+  text-align:center;
+  font-size:30px;
+  font-weight:500;
+  color:#111827;
+  margin-bottom:40px;
+}
+
+.work-wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  gap:25px;
+}
+
+.work-card{
+  width:250px;
+  text-align:center;
+  position:relative;
+}
+
+.step-number{
+  position:absolute;
+  top:-10px;
+  left:0;
+  font-size:18px;
+  color:#111;
+}
+
+.icon-box{
+  width:60px;
+  height:60px;
+  margin:0 auto 25px;
+  border-radius:50%;
+  background:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  box-shadow:0 4px 15px rgba(0,0,0,0.05);
+}
+
+
+.icon-box i{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:#6C4DF6;
+  color:#fff;
+  font-size:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.work-card h3{
+  font-size:15px;
+  font-weight:450;
+  color:#111;
+  margin-bottom:8px;
+}
+
+.work-card p{
+  font-size:12px;
+  line-height:1.7;
+  color:#555;
+}
+
+/* Dashed Curves */
+
+.curve{
+  width:200px;
+  height:60px;
+  border-top:3px dashed #777;
+    border-radius:100px 100px 0px 0px;
+  margin-top:20px;
+}
+
+.curve.reverse{
+  border-top:none;
+  border-bottom:3px dashed #0e0d0d;
+  border-radius:0px 0 80px 80px;
+}
+
+
+
+@media (min-width:768px) and (max-width:1024px){
+
+}
+//    MOBILE
+
+@media (max-width:767px){
+  .work-wrapper{
+  display:flex;
+  flex-direction: column;
+}
+.curve{
+  width:200px;
+  height:60px;
+  border-top:3px dashed #777;
+    border-radius:100px 100px 0px 0px;
+  margin-top:20px;
+  display: none;
+}
+
+.curve.reverse{
+  border-top:none;
+  border-bottom:3px dashed #0e0d0d;
+  border-radius:0px 0 80px 80px;
+  display: none;
+}
+
+}

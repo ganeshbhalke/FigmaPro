@@ -11,6 +11,9 @@ import { SavicesComponent } from './shared/component/savices/savices.component';
 import { AboutComponent } from './shared/component/about/about.component';
 import { ContactComponent } from './shared/component/contact/contact.component';
 import { HomeComponent } from './shared/pages/home/home.component';
+import { WorksectionComponent } from './shared/pages/worksection/worksection.component';
+import { TestimonialComponent } from './shared/pages/testimonial/testimonial.component';
+import { LatestNewsComponent } from './shared/pages/latest-news/latest-news.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +24,15 @@ import { HomeComponent } from './shared/pages/home/home.component';
     SavicesComponent,
     AboutComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    WorksectionComponent,
+    TestimonialComponent,
+    LatestNewsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

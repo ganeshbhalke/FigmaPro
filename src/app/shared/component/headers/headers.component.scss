@@ -9,27 +9,33 @@
 }
 
 .navbar{
-  width:90%;
+  width:70%;
   max-width:1400px;
+  margin: auto;
+
 
   position:absolute;
-  top:20px;
+  top:40px;
   left:50%;
   transform:translateX(-50%);
 
   display:flex;
   justify-content:space-between;
   align-items:center;
+height: 80px;
+  padding:0px 18px;
 
-  padding:14px 25px;
 
-  background:rgba(255,255,255,.25);
-  backdrop-filter:blur(15px);
-
-  border:1px solid rgba(109,93,252,.2);
-  border-radius:60px;
+background: rgba(255,255,255,0);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(2px);
+border: 1px solid rgba(255,255,255,0.697);
+box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    border-radius: 70px;
 
   z-index:100;
+  position: fixed;
+
 }
 
 .gana{
@@ -37,7 +43,14 @@
   border-radius:60px;
   color:#fff;
   border:1px solid #14079c;
-  padding:10px 15px;
+  padding:12px 35px;
+}
+.gana:active{
+  background-color:#6d0d99;
+  border-radius:60px;
+  color:#fff;
+  border:1px solid #871a83;
+  padding:12px 30px;
 }
 
 .logo{
@@ -62,17 +75,19 @@ nav{
   display:flex;
   align-items:center;
   gap:35px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 nav a{
   text-decoration:none;
-  color:#222;
+  color:#fff;
   font-weight:500;
   transition:.3s;
 }
 
 nav a:hover{
-  color:#6d5dfc;
+  color:#6a095d;
 }
 
 .talk-btn{
@@ -95,20 +110,23 @@ nav a:hover{
 @media (max-width:767px){
 
 .navbar{
-  width:95%;
-  padding:18px 15px;
+  width:90%;
+  padding:18px 30px 18px 18px;
 
   flex-direction:column;
   justify-content:center;
   align-items:center;
+  overflow: visible;
 
-  gap:15px;
+display: inline-block;
+  gap:10px;
 
   border-radius:40px;
 }
 
 .logo img{
-  width:120px;
+  width:80px;
+ margin: auto;
 }
 
 nav{
@@ -121,6 +139,10 @@ nav{
 
 nav a{
   font-size:14px;
+}
+.gana{
+  display:none;
+  // margin-left: 150px;
 }
 
 .gana,

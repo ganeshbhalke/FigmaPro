@@ -1,0 +1,52 @@
+<div class="gana">
+  <section class="testimonial-section">
+    <div class="testimonial-container">
+      <!-- tera slider code -->
+
+      <div class="testimonial-slider">
+        <div class="slider-box">
+          <div class="testimonial-content">
+            <div class="stars">★★★★★</div>
+
+            <p>
+              {{ testimonials[currentIndex].text }}
+            </p>
+
+            <div class="client-info">
+              <img [src]="testimonials[currentIndex].image" />
+
+              <div>
+                <h4>{{ testimonials[currentIndex].name }}</h4>
+                <span>{{ testimonials[currentIndex].role }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-text">
+      <span class="tag"> Testimonials </span>
+
+      <h2>What Our Clients Say</h2>
+
+      <p>
+        We take pride in delivering solutions that help businesses grow, improve
+        efficiency, and achieve their goals. Here’s what our clients have to say
+        about working with us.
+      </p>
+
+      <div class="stats">
+        <div class="stat-item">
+          <span>Satisfaction Rate</span>
+          <h3>98.7%</h3>
+        </div>
+
+        <div class="stat-item">
+          <span>Faster Digital</span>
+          <h3>65%</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
